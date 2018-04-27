@@ -1,0 +1,13 @@
+    php_flag magic_quotes_gpc Off
+	php_flag  display_errors  off
+	
+	# Enable Rewriting  
+    RewriteEngine on  
+    
+      
+    # Rewrite user URLs  
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule . index.php [L]
+
+	
